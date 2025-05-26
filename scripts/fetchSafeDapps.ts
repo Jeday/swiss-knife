@@ -14,6 +14,7 @@ import {
   avalanche,
   zora,
   celo,
+  soneium,
 } from "viem/chains";
 
 // Configuration for custom dapps and disabled dapps
@@ -139,6 +140,20 @@ const customDappConfig = {
         celo.id,
       ],
     },
+    {
+      id: 103,
+      name: "Lido",
+      description:
+       "Lido is the liquid staking solution for Ethereum. Stake ETH and receive stETH in return, which can be used across the DeFi ecosystem.",
+      url: "https://stake.lido.fi",
+      iconUrl: "https://stake.lido.fi/favicon-192x192.png",
+      chains: [
+        mainnet.id,
+        optimism.id,
+        unichain.id,
+        soneium.id,
+      ]
+    },
   ] as SafeDappInfo[],
 
   dappsPriority: [
@@ -166,6 +181,7 @@ const customDappConfig = {
     26, // Reflexer
     54, // Bancor Network
     152, // Velodrome Finance
+    103, // Lido
     160, // Everstake
     84, // Tenderize
     51, // Enzyme Finance
